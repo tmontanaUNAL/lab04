@@ -6,8 +6,10 @@ Fabián Garzón García
 
 Tizzian Santiago Montana Saavedra
 
+A continuacion vemos la simualacion del modulo de banco de registros, alli se escriben todos los registros con un numero distinto, tambien se va cambiando que registro mostrar a la salida.
+![image](https://user-images.githubusercontent.com/80001669/115980234-aa6a6c00-a550-11eb-8a62-94e71bf01d0c.png)
 
-
+Como vemos el modulo funciona correctamente, el dato ingresado por datW (dato a escribir) se escribe en el registro dado por addrW (dirección de escritura), esto solo cuando RegWrite (modo de escritura) se hace 1 y luego 0. Tambien se tiene, que en dato en los registros escogidos en addrRa y addrRb (registros a mostrar) se muestra en las salidas datOutRa y datOutRb (datos de salida).
 
 En el siguiente link se encuentra el video con la prueba de la pre carga del archivo Reg16.men en los registros
 https://drive.google.com/file/d/1HlK3wNaCD_jS01hjOm2OdKlFvDStWsC0/view?usp=sharing
