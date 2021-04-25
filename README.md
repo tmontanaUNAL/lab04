@@ -22,3 +22,7 @@ https://drive.google.com/drive/folders/1bhNQM7DrkF3MeATaPM1nfGes1v6T-PVD
 En este video se muestra inicialmente que el dato cargado en el registro que está en la posición 0 en le banco de registros es 15 , puesto que es el valor que se carga por defecto . Los 3 primeros Switch son los encargados de escoger que registro se muestra en la salida A , los 3 siguientes son los encargados de seleccionar que registro se muestra en la salida B, y el Switch 7 es el encargado de activar el modo de escritura. El interruptor de reset es el que se encuentra al lado del barraje de los 8 bit , y este al ser presionado hace que en cada registro se guarde su posición correspondiente .
 
 En la protoboard los 3 primeros cables se encargan de dar la posición donde se desea escribir , y los otros cuatro dan  el numero que se desea ingresar , es así como en la primera entrada se selecciona que el numero que se desea escribir este en la posición 0 y que tenga un valor de 1. Al activar el modo de escritura y luego desactivarlo vemos lo  mostrado es 0101 , esto se debe a que como los  Switch que están encargados de escoger el registro de salida en A y B están en 0.
+
+En el video se muestra que en cada registro se escribe un numero y posteriormente se muestran usando los suich de selección  y  los display de 7 segmentos  , cuando ya se le asigno un valor a cada registro usamos el reset, el cual cambia el banco de registros haciendo que en cada registro aparezca escrita su correspondiente posición. 
+
+
