@@ -119,14 +119,14 @@ VCCIO3                       : 47        : power  :                   : 2.5V    
 GND                          : 48        : gnd    :                   :         :           :                
 datW[3]                      : 49        : input  : 2.5 V             :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 50        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 51        :        :                   :         : 3         :                
+datOutRa[1]                  : 51        : output : 2.5 V             :         : 3         : N              
 datW[2]                      : 52        : input  : 2.5 V             :         : 3         : Y              
 addrW[2]                     : 53        : input  : 2.5 V             :         : 3         : Y              
 datW[1]                      : 54        : input  : 2.5 V             :         : 4         : Y              
 addrW[1]                     : 55        : input  : 2.5 V             :         : 4         : Y              
 VCCIO4                       : 56        : power  :                   : 2.5V    : 4         :                
 GND                          : 57        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 58        :        :                   :         : 4         :                
+datOutRa[0]                  : 58        : output : 2.5 V             :         : 4         : N              
 RegWrite                     : 59        : input  : 2.5 V             :         : 4         : Y              
 addrRb[2]                    : 60        : input  : 2.5 V             :         : 4         : Y              
 VCCINT                       : 61        : power  :                   : 1.2V    :           :                
@@ -137,25 +137,25 @@ addrRb[0]                    : 65        : input  : 2.5 V             :         
 addrRa[2]                    : 66        : input  : 2.5 V             :         : 4         : Y              
 addrRa[1]                    : 67        : input  : 2.5 V             :         : 4         : Y              
 addrRa[0]                    : 68        : input  : 2.5 V             :         : 4         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 69        :        :                   :         : 4         :                
+datOutRb[2]                  : 69        : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 70        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 71        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 72        :        :                   :         : 4         :                
-datOutRb[0]                  : 73        : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 73        :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 74        :        :                   :         : 5         :                
-datOutRa[2]                  : 75        : output : 2.5 V             :         : 5         : N              
-datOutRa[0]                  : 76        : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 77        :        :                   :         : 5         :                
+datOutRb[1]                  : 75        : output : 2.5 V             :         : 5         : N              
+datOutRb[0]                  : 76        : output : 2.5 V             :         : 5         : N              
+datOutRb[3]                  : 77        : output : 2.5 V             :         : 5         : N              
 VCCINT                       : 78        : power  :                   : 1.2V    :           :                
 GND                          : 79        : gnd    :                   :         :           :                
-datOutRa[1]                  : 80        : output : 2.5 V             :         : 5         : N              
+datOutRa[3]                  : 80        : output : 2.5 V             :         : 5         : N              
 VCCIO5                       : 81        : power  :                   : 2.5V    : 5         :                
 GND                          : 82        : gnd    :                   :         :           :                
-datOutRb[2]                  : 83        : output : 2.5 V             :         : 5         : N              
-datOutRb[3]                  : 84        : output : 2.5 V             :         : 5         : N              
-datOutRb[1]                  : 85        : output : 2.5 V             :         : 5         : N              
+datOutRa[2]                  : 83        : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 84        :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 85        :        :                   :         : 5         :                
 rst1                         : 86        : input  : 2.5 V             :         : 5         : Y              
-datOutRa[3]                  : 87        : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 87        :        :                   :         : 5         :                
 addrW[0]                     : 88        : input  : 2.5 V             :         : 5         : Y              
 datW[0]                      : 89        : input  : 2.5 V             :         : 5         : Y              
 GND+                         : 90        :        :                   :         : 6         :                

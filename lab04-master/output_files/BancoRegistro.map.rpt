@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BancoRegistro
-Sat Apr 24 20:31:57 2021
+Sat Apr 24 22:53:16 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -53,15 +53,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 24 20:31:57 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 24 22:53:16 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; BancoRegistro                               ;
 ; Top-level Entity Name              ; BancoRegistro                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 145                                         ;
-;     Total combinational functions  ; 124                                         ;
-;     Dedicated logic registers      ; 59                                          ;
-; Total registers                    ; 59                                          ;
+; Total logic elements               ; 130                                         ;
+;     Total combinational functions  ; 109                                         ;
+;     Dedicated logic registers      ; 44                                          ;
+; Total registers                    ; 44                                          ;
 ; Total pins                         ; 35                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -161,38 +161,39 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
+;     Processors 3-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
-; bancoregistro.v                  ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/bancoregistro.v            ;         ;
-; reg16.men                        ; yes             ; Auto-Found Unspecified File  ; C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/reg16.men                  ;         ;
-; display.v                        ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v                  ;         ;
-; bcdtosseg.v                      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/bcdtosseg.v                ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                    ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                   ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc               ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                    ;         ;
-; db/lpm_divide_i9m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/lpm_divide_i9m.tdf      ;         ;
-; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/sign_div_unsign_7kh.tdf ;         ;
-; db/alt_u_div_24f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/alt_u_div_24f.tdf       ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/add_sub_7pc.tdf         ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/add_sub_8pc.tdf         ;         ;
-; db/lpm_divide_fhm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/lpm_divide_fhm.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
+; bancoregistro.v                  ; yes             ; Auto-Found Verilog HDL File  ; E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v            ;         ;
+; reg16.men                        ; yes             ; Auto-Found Unspecified File  ; E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/reg16.men                  ;         ;
+; display.v                        ; yes             ; Auto-Found Verilog HDL File  ; E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v                  ;         ;
+; bcdtosseg.v                      ; yes             ; Auto-Found Verilog HDL File  ; E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bcdtosseg.v                ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                  ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                 ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc             ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                  ;         ;
+; db/lpm_divide_i9m.tdf            ; yes             ; Auto-Generated Megafunction  ; E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/lpm_divide_i9m.tdf      ;         ;
+; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/sign_div_unsign_7kh.tdf ;         ;
+; db/alt_u_div_24f.tdf             ; yes             ; Auto-Generated Megafunction  ; E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/alt_u_div_24f.tdf       ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/add_sub_7pc.tdf         ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/add_sub_8pc.tdf         ;         ;
+; db/lpm_divide_fhm.tdf            ; yes             ; Auto-Generated Megafunction  ; E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/lpm_divide_fhm.tdf      ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -200,20 +201,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 145        ;
+; Estimated Total logic elements              ; 130        ;
 ;                                             ;            ;
-; Total combinational functions               ; 124        ;
+; Total combinational functions               ; 109        ;
 ; Logic element usage by number of LUT inputs ;            ;
 ;     -- 4 input functions                    ; 53         ;
 ;     -- 3 input functions                    ; 17         ;
-;     -- <=2 input functions                  ; 54         ;
+;     -- <=2 input functions                  ; 39         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
 ;     -- normal mode                          ; 96         ;
-;     -- arithmetic mode                      ; 28         ;
+;     -- arithmetic mode                      ; 13         ;
 ;                                             ;            ;
-; Total registers                             ; 59         ;
-;     -- Dedicated logic registers            ; 59         ;
+; Total registers                             ; 44         ;
+;     -- Dedicated logic registers            ; 44         ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
 ; I/O pins                                    ; 35         ;
@@ -221,9 +222,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; clk1~input ;
-; Maximum fan-out                             ; 49         ;
-; Total fan-out                               ; 591        ;
-; Average fan-out                             ; 2.34       ;
+; Maximum fan-out                             ; 34         ;
+; Total fan-out                               ; 516        ;
+; Average fan-out                             ; 2.31       ;
 +---------------------------------------------+------------+
 
 
@@ -232,8 +233,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                         ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |BancoRegistro                            ; 124 (67)            ; 59 (32)                   ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |BancoRegistro                                                                                                              ; BancoRegistro       ; work         ;
-;    |display:disR|                         ; 57 (28)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BancoRegistro|display:disR                                                                                                 ; display             ; work         ;
+; |BancoRegistro                            ; 109 (67)            ; 44 (32)                   ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |BancoRegistro                                                                                                              ; BancoRegistro       ; work         ;
+;    |display:disR|                         ; 42 (13)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BancoRegistro|display:disR                                                                                                 ; display             ; work         ;
 ;       |BCDtoSSeg:bcdtosseg|               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BancoRegistro|display:disR|BCDtoSSeg:bcdtosseg                                                                             ; BCDtoSSeg           ; work         ;
 ;       |lpm_divide:Div0|                   ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BancoRegistro|display:disR|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;          |lpm_divide_fhm:auto_generated|  ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BancoRegistro|display:disR|lpm_divide:Div0|lpm_divide_fhm:auto_generated                                                   ; lpm_divide_fhm      ; work         ;
@@ -260,8 +261,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+--------------------+
 ; Register name                          ; Reason for Removal ;
 +----------------------------------------+--------------------+
-; display:disR|cfreq[17..26]             ; Lost fanout        ;
-; Total Number of Removed Registers = 10 ;                    ;
+; display:disR|cfreq[2..26]              ; Lost fanout        ;
+; Total Number of Removed Registers = 25 ;                    ;
 +----------------------------------------+--------------------+
 
 
@@ -270,8 +271,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 59    ;
-; Number of registers using Synchronous Clear  ; 20    ;
+; Total registers                              ; 44    ;
+; Number of registers using Synchronous Clear  ; 5     ;
 ; Number of registers using Synchronous Load   ; 5     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -486,14 +487,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 35                          ;
-; cycloneiii_ff         ; 59                          ;
+; cycloneiii_ff         ; 44                          ;
 ;     ENA               ; 32                          ;
-;     SCLR              ; 20                          ;
+;     SCLR              ; 5                           ;
 ;     SLD               ; 5                           ;
 ;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 125                         ;
-;     arith             ; 28                          ;
-;         2 data inputs ; 28                          ;
+; cycloneiii_lcell_comb ; 110                         ;
+;     arith             ; 13                          ;
+;         2 data inputs ; 13                          ;
 ;     normal            ; 97                          ;
 ;         0 data inputs ; 4                           ;
 ;         1 data inputs ; 2                           ;
@@ -502,7 +503,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 53                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.30                        ;
-; Average LUT depth     ; 3.74                        ;
+; Average LUT depth     ; 4.14                        ;
 +-----------------------+-----------------------------+
 
 
@@ -511,7 +512,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -521,60 +522,60 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Apr 24 20:31:26 2021
+    Info: Processing started: Sat Apr 24 22:53:08 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BancoRegistro -c BancoRegistro
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Warning (12125): Using design file bancoregistro.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: BancoRegistro File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/bancoregistro.v Line: 21
+    Info (12023): Found entity 1: BancoRegistro File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v Line: 21
 Info (12127): Elaborating entity "BancoRegistro" for the top level hierarchy
-Warning (10850): Verilog HDL warning at bancoregistro.v(63): number of words (16) in memory file does not match the number of elements in the address range [0:7] File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/bancoregistro.v Line: 63
-Warning (10230): Verilog HDL assignment warning at bancoregistro.v(75): truncated value with size 32 to match size of target (4) File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/bancoregistro.v Line: 75
+Warning (10850): Verilog HDL warning at bancoregistro.v(63): number of words (16) in memory file does not match the number of elements in the address range [0:7] File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v Line: 63
+Warning (10230): Verilog HDL assignment warning at bancoregistro.v(75): truncated value with size 32 to match size of target (4) File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v Line: 75
 Warning (12125): Using design file display.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: display File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 4
-Info (12128): Elaborating entity "display" for hierarchy "display:disR" File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/bancoregistro.v Line: 87
-Warning (10230): Verilog HDL assignment warning at display.v(29): truncated value with size 32 to match size of target (27) File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 29
-Warning (10230): Verilog HDL assignment warning at display.v(40): truncated value with size 32 to match size of target (4) File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 40
-Warning (10230): Verilog HDL assignment warning at display.v(41): truncated value with size 32 to match size of target (4) File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 41
-Warning (10230): Verilog HDL assignment warning at display.v(42): truncated value with size 32 to match size of target (4) File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 42
-Warning (10230): Verilog HDL assignment warning at display.v(43): truncated value with size 32 to match size of target (4) File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 43
-Warning (10230): Verilog HDL assignment warning at display.v(56): truncated value with size 32 to match size of target (2) File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 56
+    Info (12023): Found entity 1: display File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 4
+Info (12128): Elaborating entity "display" for hierarchy "display:disR" File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v Line: 87
+Warning (10230): Verilog HDL assignment warning at display.v(29): truncated value with size 32 to match size of target (27) File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 29
+Warning (10230): Verilog HDL assignment warning at display.v(40): truncated value with size 32 to match size of target (4) File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 40
+Warning (10230): Verilog HDL assignment warning at display.v(41): truncated value with size 32 to match size of target (4) File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 41
+Warning (10230): Verilog HDL assignment warning at display.v(42): truncated value with size 32 to match size of target (4) File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 42
+Warning (10230): Verilog HDL assignment warning at display.v(43): truncated value with size 32 to match size of target (4) File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 43
+Warning (10230): Verilog HDL assignment warning at display.v(56): truncated value with size 32 to match size of target (2) File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 56
 Warning (12125): Using design file bcdtosseg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: BCDtoSSeg File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/bcdtosseg.v Line: 1
-Info (12128): Elaborating entity "BCDtoSSeg" for hierarchy "display:disR|BCDtoSSeg:bcdtosseg" File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 17
+    Info (12023): Found entity 1: BCDtoSSeg File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bcdtosseg.v Line: 1
+Info (12128): Elaborating entity "BCDtoSSeg" for hierarchy "display:disR|BCDtoSSeg:bcdtosseg" File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 17
 Info (278001): Inferred 6 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Mod2" File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 42
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Div0" File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 41
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Mod1" File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 41
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Mod0" File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 40
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Div1" File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 43
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Mod3" File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 43
-Info (12130): Elaborated megafunction instantiation "display:disR|lpm_divide:Mod2" File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 42
-Info (12133): Instantiated megafunction "display:disR|lpm_divide:Mod2" with the following parameter: File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 42
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Mod2" File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 42
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Div0" File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 41
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Mod1" File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 41
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Mod0" File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 40
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Div1" File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 43
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "display:disR|Mod3" File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 43
+Info (12130): Elaborated megafunction instantiation "display:disR|lpm_divide:Mod2" File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 42
+Info (12133): Instantiated megafunction "display:disR|lpm_divide:Mod2" with the following parameter: File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 42
     Info (12134): Parameter "LPM_WIDTHN" = "4"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_i9m.tdf
-    Info (12023): Found entity 1: lpm_divide_i9m File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/lpm_divide_i9m.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_i9m File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/lpm_divide_i9m.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/sign_div_unsign_7kh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_7kh File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/sign_div_unsign_7kh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_24f.tdf
-    Info (12023): Found entity 1: alt_u_div_24f File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/alt_u_div_24f.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_24f File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/alt_u_div_24f.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/add_sub_7pc.tdf Line: 23
+    Info (12023): Found entity 1: add_sub_7pc File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/add_sub_7pc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/add_sub_8pc.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "display:disR|lpm_divide:Div0" File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 41
-Info (12133): Instantiated megafunction "display:disR|lpm_divide:Div0" with the following parameter: File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/display.v Line: 41
+    Info (12023): Found entity 1: add_sub_8pc File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/add_sub_8pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "display:disR|lpm_divide:Div0" File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 41
+Info (12133): Instantiated megafunction "display:disR|lpm_divide:Div0" with the following parameter: File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v Line: 41
     Info (12134): Parameter "LPM_WIDTHN" = "4"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_fhm.tdf
-    Info (12023): Found entity 1: lpm_divide_fhm File: C:/Users/fabia/Desktop/Electronica dijital/lab04/lab04-master/db/lpm_divide_fhm.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_fhm File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/db/lpm_divide_fhm.tdf Line: 25
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 10 registers lost all their fanouts during netlist optimizations.
+Info (17049): 25 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 24 assignments for entity "Hex2SSeg" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity Hex2SSeg -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity Hex2SSeg -section_id Top was ignored
@@ -602,14 +603,14 @@ Warning (20013): Ignored 24 assignments for entity "Hex2SSeg" -- entity does not
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity Hex2SSeg -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 187 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 172 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 19 output pins
-    Info (21061): Implemented 152 logic cells
+    Info (21061): Implemented 137 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 4746 megabytes
-    Info: Processing ended: Sat Apr 24 20:31:57 2021
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Peak virtual memory: 4776 megabytes
+    Info: Processing ended: Sat Apr 24 22:53:16 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:16
 
 

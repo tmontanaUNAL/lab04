@@ -23,14 +23,14 @@ addrRb[2] => Mux4.IN0
 addrRb[2] => Mux5.IN0
 addrRb[2] => Mux6.IN0
 addrRb[2] => Mux7.IN0
-datOutRa[0] <= datOutR[0].DB_MAX_OUTPUT_PORT_TYPE
-datOutRa[1] <= datOutR[1].DB_MAX_OUTPUT_PORT_TYPE
-datOutRa[2] <= datOutR[2].DB_MAX_OUTPUT_PORT_TYPE
-datOutRa[3] <= datOutR[3].DB_MAX_OUTPUT_PORT_TYPE
-datOutRb[0] <= datOutR[4].DB_MAX_OUTPUT_PORT_TYPE
-datOutRb[1] <= datOutR[5].DB_MAX_OUTPUT_PORT_TYPE
-datOutRb[2] <= datOutR[6].DB_MAX_OUTPUT_PORT_TYPE
-datOutRb[3] <= datOutR[7].DB_MAX_OUTPUT_PORT_TYPE
+datOutRa[0] << datOutR[0].DB_MAX_OUTPUT_PORT_TYPE
+datOutRa[1] << datOutR[1].DB_MAX_OUTPUT_PORT_TYPE
+datOutRa[2] << datOutR[2].DB_MAX_OUTPUT_PORT_TYPE
+datOutRa[3] << datOutR[3].DB_MAX_OUTPUT_PORT_TYPE
+datOutRb[0] << datOutR[4].DB_MAX_OUTPUT_PORT_TYPE
+datOutRb[1] << datOutR[5].DB_MAX_OUTPUT_PORT_TYPE
+datOutRb[2] << datOutR[6].DB_MAX_OUTPUT_PORT_TYPE
+datOutRb[3] << datOutR[7].DB_MAX_OUTPUT_PORT_TYPE
 addrW[0] => Decoder0.IN2
 addrW[1] => Decoder0.IN1
 addrW[2] => Decoder0.IN0
@@ -100,17 +100,17 @@ RegWrite => breg.OUTPUTSELECT
 RegWrite => breg.OUTPUTSELECT
 clk1 => clk1.IN1
 rst1 => rst1.IN1
-SsegR[0] <= display:disR.sseg
-SsegR[1] <= display:disR.sseg
-SsegR[2] <= display:disR.sseg
-SsegR[3] <= display:disR.sseg
-SsegR[4] <= display:disR.sseg
-SsegR[5] <= display:disR.sseg
-SsegR[6] <= display:disR.sseg
-anR[0] <= display:disR.an
-anR[1] <= display:disR.an
-anR[2] <= display:disR.an
-anR[3] <= display:disR.an
+SsegR[0] << display:disR.sseg
+SsegR[1] << display:disR.sseg
+SsegR[2] << display:disR.sseg
+SsegR[3] << display:disR.sseg
+SsegR[4] << display:disR.sseg
+SsegR[5] << display:disR.sseg
+SsegR[6] << display:disR.sseg
+anR[0] << display:disR.an
+anR[1] << display:disR.an
+anR[2] << display:disR.an
+anR[3] << display:disR.an
 
 
 |BancoRegistro|display:disR

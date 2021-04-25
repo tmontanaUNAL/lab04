@@ -1,0 +1,110 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/simulation/modelsim
+vBancoRegistro
+Z1 !s110 1619323103
+!i10b 1
+!s100 3ZVj?EkjbHlTFVfJZ1R;53
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IND^^o;ea3anQbN<HYb`NU3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1619319428
+8E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v
+FE:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v
+!i122 2
+L0 21 69
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1619323103.000000
+!s107 E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master|E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master
+Z8 tCvgOpt 0
+n@banco@registro
+vBCDtoSSeg
+R1
+!i10b 1
+!s100 dPZ^[1PlOV45kZe3Pno?N1
+R2
+INBR2n]adE_URjd<VBMGRV3
+R3
+R0
+w1619015353
+8E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bcdtosseg.v
+FE:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bcdtosseg.v
+!i122 1
+L0 1 28
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bcdtosseg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master|E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bcdtosseg.v|
+!i113 1
+R6
+R7
+R8
+n@b@c@dto@s@seg
+vdisplay
+R1
+!i10b 1
+!s100 IWLlegedO?lFWS4eIM=6Z2
+R2
+I_^zE<Hz<O1CJ@^O<GZLFY0
+R3
+R0
+w1619322784
+8E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v
+FE:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v
+!i122 0
+L0 4 64
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master|E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v|
+!i113 1
+R6
+R7
+R8
+vTestBench
+R1
+!i10b 1
+!s100 Mie5jB7obNJID39:@0b=g3
+R2
+Ic2<<YeXY20L^BNRHEcNd91
+R3
+R0
+w1619323091
+8E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/TestBench.v
+FE:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/TestBench.v
+!i122 3
+L0 25 70
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/TestBench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master|E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/TestBench.v|
+!i113 1
+R6
+R7
+R8
+n@test@bench

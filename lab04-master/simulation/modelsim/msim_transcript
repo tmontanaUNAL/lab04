@@ -1,0 +1,81 @@
+# Reading pref.tcl
+# do BancoRegistro_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master {E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:58:23 on Apr 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master" E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/display.v 
+# -- Compiling module display
+# 
+# Top level modules:
+# 	display
+# End time: 22:58:23 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master {E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bcdtosseg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:58:23 on Apr 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master" E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bcdtosseg.v 
+# -- Compiling module BCDtoSSeg
+# 
+# Top level modules:
+# 	BCDtoSSeg
+# End time: 22:58:23 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master {E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:58:23 on Apr 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master" E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v 
+# -- Compiling module BancoRegistro
+# 
+# Top level modules:
+# 	BancoRegistro
+# End time: 22:58:23 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master {E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/TestBench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:58:23 on Apr 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master" E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/TestBench.v 
+# -- Compiling module TestBench
+# 
+# Top level modules:
+# 	TestBench
+# End time: 22:58:23 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TestBench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TestBench 
+# Start time: 22:58:23 on Apr 24,2021
+# Loading work.TestBench
+# Loading work.BancoRegistro
+# Loading work.display
+# Loading work.BCDtoSSeg
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 11, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /TestBench/uut File: E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/TestBench.v Line: 43
+# ** Warning: (vsim-3722) E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/TestBench.v(43): [TFMPC] - Missing connection for port 'SsegR'.
+# ** Warning: (vsim-3722) E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/TestBench.v(43): [TFMPC] - Missing connection for port 'anR'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: (vsim-7) Failed to open readmem file "Reg16.men" in read mode.
+# No such file or directory. (errno = ENOENT)    : E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/bancoregistro.v(63)
+#    Time: 0 ps  Iteration: 0  Instance: /TestBench/uut
+# ** Note: $finish    : E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/TestBench.v(92)
+#    Time: 220 ns  Iteration: 0  Instance: /TestBench
+# 1
+# Break in NamedBeginStat TEST_CASE at E:/Users/tisam.SUPER-PC/Documents/GitHub/lab04/lab04-master/TestBench.v line 92
+# End time: 23:08:20 on Apr 24,2021, Elapsed time: 0:09:57
+# Errors: 0, Warnings: 4

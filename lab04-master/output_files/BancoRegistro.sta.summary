@@ -2,75 +2,75 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'display:disR|cfreq[16]'
-Slack : -4.842
-TNS   : -20.325
+Type  : Slow 1200mV 85C Model Setup 'display:disR|cfreq[1]'
+Slack : -4.717
+TNS   : -20.155
 
 Type  : Slow 1200mV 85C Model Setup 'clk1'
-Slack : -2.041
-TNS   : -22.487
+Slack : -1.361
+TNS   : -1.700
 
 Type  : Slow 1200mV 85C Model Hold 'clk1'
 Slack : 0.454
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'display:disR|cfreq[16]'
+Type  : Slow 1200mV 85C Model Hold 'display:disR|cfreq[1]'
 Slack : 0.454
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk1'
 Slack : -3.000
-TNS   : -75.863
+TNS   : -53.558
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:disR|cfreq[16]'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:disR|cfreq[1]'
 Slack : -1.487
 TNS   : -14.870
 
-Type  : Slow 1200mV 0C Model Setup 'display:disR|cfreq[16]'
-Slack : -4.446
-TNS   : -18.326
+Type  : Slow 1200mV 0C Model Setup 'display:disR|cfreq[1]'
+Slack : -4.369
+TNS   : -18.383
 
 Type  : Slow 1200mV 0C Model Setup 'clk1'
-Slack : -1.698
-TNS   : -18.358
+Slack : -1.206
+TNS   : -1.414
 
 Type  : Slow 1200mV 0C Model Hold 'clk1'
 Slack : 0.402
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'display:disR|cfreq[16]'
+Type  : Slow 1200mV 0C Model Hold 'display:disR|cfreq[1]'
 Slack : 0.402
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk1'
 Slack : -3.000
-TNS   : -75.863
+TNS   : -53.558
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:disR|cfreq[16]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:disR|cfreq[1]'
 Slack : -1.487
 TNS   : -14.870
 
-Type  : Fast 1200mV 0C Model Setup 'display:disR|cfreq[16]'
-Slack : -1.502
-TNS   : -5.823
+Type  : Fast 1200mV 0C Model Setup 'display:disR|cfreq[1]'
+Slack : -1.500
+TNS   : -5.115
 
 Type  : Fast 1200mV 0C Model Setup 'clk1'
-Slack : -0.490
-TNS   : -1.376
+Slack : -0.575
+TNS   : -0.575
 
 Type  : Fast 1200mV 0C Model Hold 'clk1'
-Slack : 0.186
+Slack : 0.187
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'display:disR|cfreq[16]'
-Slack : 0.186
+Type  : Fast 1200mV 0C Model Hold 'display:disR|cfreq[1]'
+Slack : 0.187
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk1'
 Slack : -3.000
-TNS   : -55.255
+TNS   : -39.203
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:disR|cfreq[16]'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:disR|cfreq[1]'
 Slack : -1.000
 TNS   : -10.000
 

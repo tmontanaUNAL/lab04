@@ -25,9 +25,9 @@
 module TestBench;
 
 	// Inputs
-	reg [3:0] addrRa;
-	reg [3:0] addrRb;
-	reg [4:0] addrW;
+	reg [2:0] addrRa;
+	reg [2:0] addrRb;
+	reg [2:0] addrW;
 	reg [3:0] datW;
 	reg RegWrite;
 	reg clk;
@@ -36,6 +36,8 @@ module TestBench;
 	// Outputs
 	wire [3:0] datOutRa;
 	wire [3:0] datOutRb;
+	//wire [6:0] SsegR;
+	//wire [3:0] anR;
 
 	// Instantiate the Unit Under Test (UUT)
 	BancoRegistro uut (
@@ -46,8 +48,10 @@ module TestBench;
 		.addrW(addrW), 
 		.datW(datW), 
 		.RegWrite(RegWrite), 
-		.clk(clk), 
-		.rst(rst)
+		.clk1(clk), 
+		.rst1(rst)
+	//	.SsegR(SsegR),
+		//.anR(anR)
 	);
 
 	initial begin
@@ -58,10 +62,20 @@ module TestBench;
 		datW = 0;
 		RegWrite = 0;
 		clk = 0;
-		rst = 0;
-
+		rst = 1;
+		
 		// Wait 100 ns for global reset to finish
-		#100;
+		#10;
+		
+      for (addrW = 0; addrW < 8; addrW = addrW + 1) begin
+			datW = addrW;
+			#5 RegWrite = 1;
+			#5 RegWrite = 0;
+			addrRa=addrW;
+			addrRb=addrW;
+			#5;
+    end
+		
       for (addrRa = 0; addrRa < 8; addrRa = addrRa + 1) begin
 			#5 addrRb=addrRa+8;
 			 $display("el valor de registro %d =  %d y %d = %d", addrRa,datOutRa,addrRb,datOutRb) ;
@@ -70,6 +84,12 @@ module TestBench;
 		
 		
 	end
-      
+	
+	always #1 clk = ~clk;
+	
+      initial begin: TEST_CASE
+     $dumpfile("bancoregistro_TB.vcd");
+     #(220) $finish;
+		end
 endmodule
 

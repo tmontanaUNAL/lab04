@@ -37,7 +37,7 @@ module BancoRegistro #(      		 //   #( Parametros
     input rst1,
 	 
 	 output [6:0] SsegR,
-	 output reg [3:0] anR
+	 output [3:0] anR
     );
 	 
 	
